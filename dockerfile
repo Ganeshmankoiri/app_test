@@ -1,9 +1,8 @@
-from node 
+FROM node 
 
 RUN mkdir -p testapp
 
-copy . /testapp
+COPY . /testapp
 
-EXPOSE 8000
 
 CMD [ "node", "/testapp/server.js" ]
